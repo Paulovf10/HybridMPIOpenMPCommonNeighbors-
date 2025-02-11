@@ -14,7 +14,7 @@ sequencial: $(OBJ_SEQ)
 	$(CC) -o bin/versao_sequencial $(OBJ_SEQ)
 
 paralela: $(OBJ_PAR)
-	$(CC) $(CFLAGS_PAR) -o bin/versao_paralela $(OBJ_PAR)  # Compilando com OpenMP
+	$(CC) $(CFLAGS_PAR) -o bin/versao_paralela $(OBJ_PAR)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
